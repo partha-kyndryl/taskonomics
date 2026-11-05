@@ -1,0 +1,32 @@
+{
+  "deployments": [
+    {
+      "name": "article-study-current",
+      "variant": "current",
+      "gateway_image": "<redacted>.dkr.ecr.us-east-1.amazonaws.com/telecast-agents@sha256:2a94f5f0fc0aa1edfec16c6797a583da627b8389ec1eb5014a4f80100d5fc45d",
+      "negotiation_image": "<redacted>.dkr.ecr.us-east-1.amazonaws.com/negotiation-agent@sha256:d9fa223ac03474e43167bc2965c3a326b407bb850302608cd97986e381304d0c",
+      "task_queue": "article-20260921-current"
+    },
+    {
+      "name": "article-study-cheaper",
+      "variant": "cheaper",
+      "gateway_image": "<redacted>.dkr.ecr.us-east-1.amazonaws.com/telecast-agents@sha256:2a94f5f0fc0aa1edfec16c6797a583da627b8389ec1eb5014a4f80100d5fc45d",
+      "negotiation_image": "<redacted>.dkr.ecr.us-east-1.amazonaws.com/negotiation-agent@sha256:d9fa223ac03474e43167bc2965c3a326b407bb850302608cd97986e381304d0c",
+      "task_queue": "article-20260921-cheaper"
+    },
+    {
+      "name": "article-study-optimized",
+      "variant": "optimized",
+      "gateway_image": "<redacted>.dkr.ecr.us-east-1.amazonaws.com/telecast-agents@sha256:2a94f5f0fc0aa1edfec16c6797a583da627b8389ec1eb5014a4f80100d5fc45d",
+      "negotiation_image": "<redacted>.dkr.ecr.us-east-1.amazonaws.com/negotiation-agent@sha256:d9fa223ac03474e43167bc2965c3a326b407bb850302608cd97986e381304d0c",
+      "task_queue": "article-20260921-optimized"
+    }
+  ],
+  "prompt_snapshot_sha256": "7ab4196111863736e527018b188ab2823692410eeb935cf5c121477db0b5c77c",
+  "code_sha256": {
+    "launcher.py": "59afacef304f17a711c8313ddce23e06066f6d111969a5406613fea3ef100d94",
+    "meter.py": "6bebd6f8d1146b6bca6d0ca7a0678051d5ba73a5720664946cd341093375d70e",
+    "prompts.json": "7ab4196111863736e527018b188ab2823692410eeb935cf5c121477db0b5c77c"
+  },
+  "production_deployments_modified": false
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "variant": "cheaper",
+    "effective_request_settings": {
+      "model": "gpt-5.4-nano",
+      "stream": false,
+      "tool_choice": {
+        "type": "function",
+        "function": {
+          "name": "CoordinatorDecision"
+        }
+      }
+    },
+    "first_evidence": "data/sdk_fault-cheaper-exhaust503-r1/gateway_http.jsonl",
+    "attempt_id": "ca139c4e354842ebb22162fd1823ac21"
+  },
+  {
+    "variant": "cheaper",
+    "effective_request_settings": {
+      "model": "gpt-5.4-nano",
+      "stream": false
+    },
+    "first_evidence": "data/sdk_fault-cheaper-exhaust503-r1/gateway_http.jsonl",
+    "attempt_id": "4a46964f8088444c8b1930f3c8e91c31"
+  },
+  {
+    "variant": "current",
+    "effective_request_settings": {
+      "model": "gpt-5.4",
+      "stream": false,
+      "tool_choice": {
+        "type": "function",
+        "function": {
+          "name": "CoordinatorDecision"
+        }
+      }
+    },
+    "first_evidence": "data/comparison-current-bundle_details-r1/gateway_http.jsonl",
+    "attempt_id": "2bbf431a66314bbcac93578cbccbbd1a"
+  },
+  {
+    "variant": "current",
+    "effective_request_settings": {
+      "model": "gpt-5.4",
+      "stream": false
+    },
+    "first_evidence": "data/comparison-current-bundle_details-r1/gateway_http.jsonl",
+    "attempt_id": "41326bb3a4c94d31a740fb1f59d67906"
+  },
+  {
+    "variant": "optimized",
+    "effective_request_settings": {
+      "model": "gpt-5.4",
+      "stream": false,
+      "tool_choice": {
+        "type": "function",
+        "function": {
+          "name": "CoordinatorDecision"
+        }
+      }
+    },
+    "first_evidence": "data/optimization-optimized-multi_turn-r2/gateway_http.jsonl",
+    "attempt_id": "0f7f5aafdb80484383fff6cddb4a427b"
+  },
+  {
+    "variant": "optimized",
+    "effective_request_settings": {
+      "model": "gpt-5.4",
+      "stream": false
+    },
+    "first_evidence": "data/optimization-optimized-multi_turn-r2/gateway_http.jsonl",
+    "attempt_id": "a1b9f79ce3fb41e99045a956516e7a31"
+  }
+]

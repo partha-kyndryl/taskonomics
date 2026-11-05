@@ -1,0 +1,15 @@
+{
+  "checked_at_utc": "2026-09-21",
+  "currency": "USD",
+  "unit": "per million tokens",
+  "status": "Calculated reference costs from measured provider usage, not reconciled Azure invoices. Azure subscription SKU, regional surcharge and commercial discounts unverified.",
+  "models": {
+    "gpt-5.4": {"input": 2.5, "cached_input": 0.25, "output": 15, "source": "https://developers.openai.com/api/docs/models/gpt-5.4"},
+    "gpt-5.4-nano": {"input": 0.2, "cached_input": 0.02, "output": 1.25, "source": "https://developers.openai.com/api/docs/models/gpt-5.4-nano", "azure_source": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/introducing-openai%E2%80%99s-gpt-5-4-mini-and-gpt-5-4-nano-for-low-latency-ai/4500569"}
+  },
+  "formula": "((prompt_tokens-cached_tokens)*input_rate + cached_tokens*cached_input_rate + completion_tokens*output_rate)/1000000",
+  "cache_write_tokens": null,
+  "cache_write_status": "Not reported by provider; never inferred as zero. No separate cache-write fee in selected reference schedules.",
+  "tool_infrastructure_cost": null,
+  "boundary": "Runtime model spend includes sign-in, inline evaluation and failed runs. Real MCP/database/OPA/Temporal services are used; shared infrastructure cost, human labor and approval waiting cost are not allocated. External benchmark grading makes no API calls."
+}
