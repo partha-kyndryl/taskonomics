@@ -1,6 +1,6 @@
 # Cost per completed task — study records
 
-Supporting evidence for *From Tokenomics to Taskonomics*.
+Supporting evidence for [From Tokenomics to Taskonomics](https://medium.com/@parthamadhira/from-tokenomics-to-taskonomics-89abc5a9c5b9).
 
 A multi-agent application was measured across 24 controlled backend sessions in
 September 2026, comparing two model configurations on three tasks. This folder
